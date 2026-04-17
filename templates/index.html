@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center">
+
+<h1>Admission Predictor</h1>
+
+<form action="/predict" method="post">
+    <input name="gre" placeholder="GRE"><br><br>
+    <input name="toefl" placeholder="TOEFL"><br><br>
+    <input name="rating" placeholder="Rating"><br><br>
+    <input name="sop" placeholder="SOP"><br><br>
+    <input name="lor" placeholder="LOR"><br><br>
+    <input name="cgpa" placeholder="CGPA"><br><br>
+    <input name="research" placeholder="Research"><br><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
